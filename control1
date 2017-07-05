@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class study1 : MonoBehaviour {
+
+	// Use this for initialization
+	void Update () 
+	{
+		var h = Input.GetAxis ("Horizontal");
+		transform.Rotate (0, h, 0);
+		var L = Input.GetAxis ("Vertical");
+		transform.Translate (0, 0, L * 0.02F);
+	}
+}
